@@ -1,0 +1,176 @@
+@import '../../../app.scss';
+
+.newSale {
+    width: 100%;
+    height: 300px;
+    background-color: $colorG;
+    display: flex;
+
+    .newSaleViolet {
+        background-color: $colorB;
+        height: 100%;
+        width: 60px;
+    }
+
+    .newSaleYellow {
+        background-color: $colorC;
+        height: 100%;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+
+        h2 {
+            font-size: 4rem;
+            margin-bottom: 4rem;
+            margin-left: 2rem;
+        }
+
+        h3 {
+            width: 350px;
+            font-size: 3rem;
+            position: absolute;
+            bottom: 5rem;
+            margin-left: 2rem;
+        }
+    }
+
+    .newSaleCont {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-left: 10%;
+
+        .saleOfertA {
+            width: 150px;
+            position: absolute;
+            top: 35px;
+            left: 10px;
+        }
+
+        .newSaleImg {
+            width: 400px;
+            background-image: url('../../../../public/blob.svg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+
+            .imgProduct {
+                width: 120px;
+                object-fit: contain;
+            }
+        }
+
+        .saleOfertB {
+            width: 150px;
+            position: absolute;
+            bottom: 35px;
+            right: 330px;
+        }
+
+        .textNewSale {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .nSName {
+                font-size: 3rem;
+                color: $colorB;
+                text-align: right;
+            }
+
+            .nSPrice {
+                font-size: 1.6rem;
+                background-color: $colorC;
+                padding: 6px;
+                width: 220px;
+                border-radius: 12px;
+                text-align: center;
+                box-shadow: 11px 10px 24px -1px rgba(229, 181, 60, 0.75);
+                -webkit-box-shadow: 11px 10px 24px -1px rgba(229, 181, 60, 0.75);
+                -moz-box-shadow: 11px 10px 24px -1px rgba(229, 181, 60, 0.75);
+            }
+
+            .btn {
+                height: 30px;
+                width: 230px;
+                border: none;
+                border-radius: 12px;
+                background-color: $colorA;
+                color: white;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    background-color: $colorB;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .newSale {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow: hidden;
+
+        .newSaleViolet,
+        .newSaleYellow,
+        .newSaleCont {
+            width: 100%;
+        }
+
+        .newSaleViolet {
+            height: 10px;
+        }
+
+        .newSaleYellow {
+            justify-content: center;
+            align-items: center;
+            height: 80px;
+
+            h2 {
+                font-size: 1.5rem;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 1.4rem;
+                margin: 0;
+                text-align: center;
+                bottom: 1px;
+            }
+        }
+
+        .newSaleCont {
+            margin-left: 0; 
+            flex-direction: column; 
+            align-items: center; 
+
+            .newSaleImg {
+                width: 90%; 
+                max-width: 300px; 
+            }
+
+            .saleOfertA,
+            .saleOfertB {
+                display: none;
+            }
+        }
+
+        .textNewSale {
+            align-items: center;
+            margin-bottom: 2rem;
+
+            .nSName {
+                font-size: 2rem !important;
+            }
+        }
+    }
+}

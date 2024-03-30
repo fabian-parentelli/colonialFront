@@ -1,0 +1,60 @@
+@import '../../../../app.scss';
+
+.vewOrders {
+    padding: 4rem 2rem;
+    width: 100%;
+    height: 100%;
+
+    .vewOrdersIn {
+        width: 90%;
+        height: 100%;
+        border: solid 2px $colorA;
+        border-radius: 12px;
+        padding: 1rem;
+
+        .vewOrdersUp {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .vewOrderCustomer {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+
+            .vewOrderCustomerIn {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+        }
+
+        .vewOrderCart {
+            width: 100%;
+            margin-top: 2rem;
+
+            .cardVewOrderCart {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+        }
+    }
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.btn-seen {
+    margin-top: 2rem;
+}
+
+@media print {
+    .btn-A {
+        display: none;
+    }
+}

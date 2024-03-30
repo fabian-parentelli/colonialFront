@@ -1,0 +1,47 @@
+@import '../../../../../app.scss';
+
+.writeMessage {
+    width: 100%;
+
+    h3 {
+        color: $colorB;
+        margin-top: 1rem;
+    }
+
+    .formWriteMessage {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        margin-top: 6px;
+
+        input {
+            height: 30px;
+            border-radius: 6px;
+            border: solid 1px $colorA;
+            padding-left: 3px;
+        }
+
+        .txtA {
+            width: 100%;
+        }
+
+        .btn {
+            height: 30px;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            border: solid 1px $colorA;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            background-color: $colorA;
+            color: $colorG;
+
+            &:hover {
+                background-color: $colorB;
+            }
+        }
+    }
+}

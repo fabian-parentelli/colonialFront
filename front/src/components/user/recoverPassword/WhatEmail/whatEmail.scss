@@ -1,0 +1,83 @@
+@import '../../../../app.scss';
+
+.whatEmail {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('../../../../assets/register.jpg');
+    background-size: cover;
+
+    img {
+        width: 300px;
+    }
+
+    #formWhatEmail {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+
+        h2 {
+            text-align: center;
+            color: $colorG;
+        }
+
+        .whatEmailDiv {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 0 auto;
+            gap: 6px;
+
+            label {
+                font-weight: 600;
+                color: $colorG;
+            }
+
+            input {
+                width: 300px;
+                height: 30px;
+                border-radius: 6px;
+                padding-left: 6px;
+                border: none;
+
+                &::placeholder {
+                    color: rgba(255, 0, 0, 0.349);
+                }
+            }
+        }
+
+        .btn {
+            margin: 0 auto;
+        }
+    }
+}
+
+.message {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    color: $colorG;
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .whatEmail img {
+        display: none;
+    }
+
+    #formWhatEmail {
+        width: 100% !important;
+    }
+
+    #formWhatEmail div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

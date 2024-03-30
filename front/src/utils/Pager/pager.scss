@@ -1,0 +1,39 @@
+@import '../../app.scss';
+
+.pager {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+
+    .gtppagerActualPage {
+        width: 30px;
+        height: 30px;
+        border: solid 1px $colorD;
+        border-radius: 6px;
+        background-color: $colorD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gtppagerNextPage {
+        color: $colorG;
+        width: 30px;
+        height: 30px;
+        border: solid 1px $colorA;
+        border-radius: 6px;
+        background-color: $colorA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            background-color: $colorB;
+        }
+    }
+}

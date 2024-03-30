@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+$colorA: #231A3D;
+$colorB: #2D2150;
+$colorC: #FF9C19;
+$colorD: #E5B53C;
+$colorE: #FF6705;
+$colorF: #EF2525;
+$colorG: #EBEBEB;
+$colorH: #297E99;
+
+body {
+  background-color: $colorG;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@import './utils/bottom.scss';

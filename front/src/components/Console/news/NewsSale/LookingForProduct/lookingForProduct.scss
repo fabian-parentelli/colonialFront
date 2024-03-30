@@ -1,0 +1,18 @@
+@import '../../../../../app.scss';
+
+.lookingForProduct {
+    display: flex;
+    align-items: center;
+    border: solid 1px $colorA;
+    border-radius: 12px;
+    width: 200px;
+
+    input {
+        height: 30px;
+        width: 100%;
+        padding-left: 5px;
+        border-radius: 0 12px 12px 0;
+        border: none;
+        background-color: $colorG;
+    }
+}

@@ -1,0 +1,74 @@
+@import '../../../../../app.scss';
+
+.unseenOrdersData {
+    width: 100%;
+    height: 100%;
+
+    .gtpTable {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .gtpButtoms {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.4rem;
+        }
+
+        button {
+            padding: 3px;
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 4%;
+            border: 1px solid $colorA;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+
+            &:hover {
+                background-color: $colorD;
+            }
+        }
+
+        .btn-Unser {
+            padding: 3px;
+            width: 100%;
+            border-radius: 6px;
+            margin-top: 4%;
+            border: 1px solid $colorA;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            width: 60px;
+            height: 100%;
+
+            &:hover {
+                background-color: $colorD;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,85 @@
+@import '../../../app.scss';
+
+.login {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/login.jpg');
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .formLogin {
+        height: 80%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        h2 {
+            color: $colorA;
+
+            span {
+                color: $colorE;
+            }
+        }
+
+        .loginInputs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            color: $colorA;
+
+            input {
+                width: 100%;
+                height: 30px;
+                padding-left: 6px;
+                border-radius: 6px;
+                border: 1px solid $colorA;
+            }
+        }
+
+        .butDivLogin {
+            display: flex;
+            gap: 1rem;
+            text-decoration: none;
+
+            .btn {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .imgLogin {
+        width: 600px;
+        object-fit: contain;
+    }
+}
+
+@media screen and (max-width: 1076px) {
+
+    .login {
+        text-align: center;
+
+        .imgLogin {
+            display: none;
+        }
+
+        .formLogin {
+            margin-left: 1%;
+            .loginInputs {
+                align-items: center;
+                input {
+                    width: 80%;
+                }
+            }
+
+            .butDivLogin {
+                flex-direction: column;
+            }
+        }
+    }
+}

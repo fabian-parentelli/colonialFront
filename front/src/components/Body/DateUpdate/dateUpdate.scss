@@ -1,0 +1,16 @@
+@import '../../../app.scss';
+
+.dateUpdate {
+    background-color: $colorF;
+    padding: 6px 0;
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-width: 424px) {
+    .dateUpdate p {
+        text-align: right;
+        font-size: 14px;
+        padding-right: 5px;
+    }
+}

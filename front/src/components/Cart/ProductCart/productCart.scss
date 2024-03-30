@@ -1,0 +1,110 @@
+@import '../../../app.scss';
+
+.productCart {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    .prodCrad {
+        width: 100%;
+        height: 150px;
+        background-color: $colorG;
+        border: solid 2px $colorA;
+        border-radius: 12px;
+        box-shadow: 5px 5px 15px;
+
+        display: flex;
+        align-items: center;
+        padding: 6px;
+
+        img {
+            width: 80px;
+            height: 130px;
+            object-fit: contain;
+        }
+
+        .prodCartData {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 12px;
+            width: 100%;
+            height: 100%;
+
+            .prodCartTitle {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                color: $colorA;
+
+                .prCaName {
+                    font-weight: 600;
+                }
+
+                .prCaDescription {
+                    font-size: 12px;
+                }
+
+                .deleteIcon {
+                    color: $colorF;
+                    cursor: pointer;
+                    transition: .3s ease-in-out;
+                    &:hover {
+                        color: brown;
+                    }
+                }
+            }
+
+            .contQuantity {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .prodCartLine {
+                width: 100%;
+                height: 2px;
+                background-color: $colorA;
+            }
+
+            .prodCratUnderLine {
+                display: flex;
+                justify-content: space-between;
+                p {
+                    font-size: 10px;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .productCart {
+        width: 80%;
+        height: 100%;
+    
+        .prodCrad {
+            width: 100%;
+            height: 250px;
+    
+            img {
+                width: 60px;
+                height: 80px;
+                object-fit: contain;
+            }
+    
+            .prodCartData {
+
+                .contQuantity {
+                    flex-direction: column;
+                }
+    
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.btn-A {
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid $colorA;
+    background-color: $colorC;
+    transition: .3s;
+    color: $colorA;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $colorD;
+    }
+}
+
+.btn-B {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid $colorA;
+    background-color: $colorH;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $colorD;
+    }
+}
+
+.btn-C {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 200px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid $colorA;
+    background-color: $colorH;
+    color: black;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $colorF;
+    }
+}

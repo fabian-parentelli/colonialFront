@@ -1,0 +1,25 @@
+@import '../../app.scss';
+
+.console {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+
+    .consoleContainer {
+        width: 200px;
+        height: auto;
+        color: $colorG;
+        background-color: $colorA;
+        padding: 5rem 0 0 4rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 1rem;
+
+        h2 {
+            margin-bottom: 6px;
+        }
+    }
+}

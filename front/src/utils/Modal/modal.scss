@@ -1,0 +1,41 @@
+@import '../../app.scss';
+
+.custom-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid $colorE;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.808);
+    max-width: 400px;
+    width: 100%;
+    outline: none;
+    border-radius: 12px;
+}
+
+.custom-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+.close-button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pModal {
+    font-size: 2rem;
+    margin: 1rem 0;
+}

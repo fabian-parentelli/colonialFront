@@ -1,0 +1,25 @@
+@import '../../../../app.scss';
+
+.updateDate {
+    margin-top: 1rem;
+
+    .updDateData {
+        display: flex;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+
+    button {
+        margin-top: 1rem;
+        height: 30px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        border: none;
+        background-color: $colorC;
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover {
+            background-color: $colorD;
+        }
+    }
+}

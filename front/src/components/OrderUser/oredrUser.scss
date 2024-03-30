@@ -1,0 +1,14 @@
+@import '../../app.scss';
+
+.oredrUser {
+    width: 90%;
+    min-height: 100vh;
+    background-color: $colorG;
+    padding: 2rem 6rem;
+
+    .orderUserIn {
+        margin-top: 2rem;
+        border: solid 1px $colorA;
+        border-radius: 12px;
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../../../app.scss';
+
+.payProvider {
+    padding: 2rem;
+    height: 80vh;
+
+    form {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .newProviderDiv {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            input {
+                height: 30px;
+                width: 100px;
+                border: none;
+                border-radius: 6px;
+                padding-left: 6px;
+            }
+        }
+
+        .updateProviderRadio {
+            display: flex;
+            gap: 12px;
+            .upProvRad {
+                display: flex;
+                gap: 3px;
+                align-items: center;
+            }
+        }
+    }
+}

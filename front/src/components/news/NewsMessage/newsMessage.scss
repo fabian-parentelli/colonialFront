@@ -1,0 +1,23 @@
+@import '../../../app.scss';
+
+.newsMessage {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: $colorD;
+
+    p {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .newsMessage {
+
+        p {
+            margin: 1rem;
+            margin-left: 3rem;
+            width: 80%;
+        }
+    }
+}

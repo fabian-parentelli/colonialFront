@@ -1,0 +1,71 @@
+@import '../../../../app.scss';
+
+$table-background: #f4f4f4;
+$table-header-color: #fff;
+$table-row-hover-color: #f9f9f9;
+
+$table-border-color: #ddd;
+
+.vewProviders {
+    width: 80%;
+    height: 70vh;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: $table-background;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+thead th {
+    background: $colorA;
+    color: $table-header-color;
+    border-bottom: 2px solid $table-border-color;
+}
+
+tbody tr:hover {
+    background-color: $table-row-hover-color;
+}
+
+tbody td {
+    border-bottom: 1px solid $table-border-color;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.btnVewProvider {
+    cursor: pointer;
+    background-color: $colorA;
+    color: #ddd;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    border: none;
+}
+
+.btnVewProvider:hover {
+    background-color: $colorB;
+}
+
+.linkProvider {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: $colorA;
+    padding: 9px 16px;
+    color: #ddd;
+    border-radius: 6px;
+    font-size: 12px;
+} 
+
+.linkProvider:hover {
+    background-color: $colorB;
+}
